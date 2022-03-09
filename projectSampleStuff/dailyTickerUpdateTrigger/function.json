@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 0 1 1 *"
+    },
+    {
+      "name": "stockUpdateQueue",
+      "queueName": "update-stock-queue",
+      "connection": "stocketl_STORAGE",
+      "direction": "out",
+      "type": "queue"
+    }
+  ]
+}

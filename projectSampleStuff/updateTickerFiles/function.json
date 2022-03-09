@@ -1,0 +1,39 @@
+{
+    "bindings": [
+      {
+        "name": "myQueueItem",
+        "type": "queueTrigger",
+        "direction": "in",
+        "queueName": "update-stock-queue",
+        "connection": "stocketl_STORAGE"
+      },
+      {
+        "name": "outputBlob",
+        "direction": "out",
+        "type": "blob",
+        "path": "stock/{ticker}.json",
+        "connection": "betelgeusecdn_STORAGE"
+      },
+      {
+        "name": "scannerDataOutput",
+        "path": "stockmini/{ticker}.json",
+        "connection": "betelgeusecdn_STORAGE",
+        "direction": "out",
+        "type": "blob"
+      },
+      {
+        "name": "coalesceHistoriesQueue",
+        "direction": "out",
+        "type": "queue",
+        "queueName": "coalesce-histories-queue",
+        "connection": "stocketl_STORAGE"
+      },
+      {
+        "name": "miniHistories",
+        "direction": "out",
+        "type": "table",
+        "tableName": "miniHistories",
+        "connection": "stocketl_STORAGE"
+      }
+    ]
+  }

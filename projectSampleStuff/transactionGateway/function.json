@@ -1,0 +1,40 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "outputUserTransaction",
+      "direction": "out",
+      "type": "table",
+      "tableName": "usertransactions",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "outputSubmitTransactionQueue0",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "submittransaction0",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "outputSubmitTransactionQueue1",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "submittransaction1",
+      "connection": "sdogubackend_STORAGE"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "submittransaction0",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "userAllowance",
+      "tableName": "usertransactionallowance",
+      "partitionKey": "user",
+      "rowKey": "{UserId}",
+      "take": 50,
+      "connection": "sdogubackend_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "tickersimqueue0",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickersimqueue0",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "tickersimqueue1",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickersimqueue1",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "tickersimqueue2",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickersimqueue2",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "tickersimqueue3",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickersimqueue3",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "tickersimqueue4",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickersimqueue4",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "tickerscreenqueue0",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickerscreenqueue0",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "tickerscreenqueue1",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickerscreenqueue1",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "tickerscreenqueue2",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickerscreenqueue2",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "tickerscreenqueue3",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickerscreenqueue3",
+      "connection": "sdogubackend_STORAGE"
+    },
+    {
+      "name": "tickerscreenqueue4",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "tickerscreenqueue4",
+      "connection": "sdogubackend_STORAGE"
+    }
+  ]
+}

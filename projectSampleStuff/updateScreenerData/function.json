@@ -1,0 +1,259 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "coalesce-histories-queue",
+      "connection": "stocketl_STORAGE"
+    },
+    {
+      "name": "A",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}A",
+      "take": 1000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "B",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}B",
+      "take": 1000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "C",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}C",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "D",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}D",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "E",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}E",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "F",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}F",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "G",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}G",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "H",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}H",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "I",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}I",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "J",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}J",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "K",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}K",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "L",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}L",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "M",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}M",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "N",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}N",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "O",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}O",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "P",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}P",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "Q",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}Q",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "R",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}R",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "S",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}S",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "T",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}T",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "U",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}U",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "V",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}V",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "W",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}W",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "X",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}X",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "Y",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}Y",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "Z",
+      "tableName": "miniHistories",
+      "partitionKey": "{partitionKey}Z",
+      "take": 10000,
+      "connection": "stocketl_STORAGE",
+      "direction": "in",
+      "type": "table"
+    },
+    {
+      "name": "scrennerData",
+      "path": "stock/screenerData.json",
+      "connection": "betelgeusecdn_STORAGE",
+      "direction": "out",
+      "type": "blob"
+    },
+    {
+      "name": "screenEtlQueue",
+      "direction": "out",
+      "type": "queue",
+      "queueName": "screen-etl-queue",
+      "connection": "stocketl_STORAGE"
+    }
+  ]
+}
